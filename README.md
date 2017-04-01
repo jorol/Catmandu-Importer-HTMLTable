@@ -1,14 +1,20 @@
 # NAME
 
-Catmandu::Importer::HTMLTable - Imports HTML tables form file or URL 
+Catmandu::Importer::HTMLTable - Imports HTML tables form file or URL
+
+[![Build Status](https://travis-ci.org/jorol/Catmandu-Importer-HTMLTable.png)](https://travis-ci.org/jorol/Catmandu-Importer-HTMLTable)
+[![Coverage Status](https://coveralls.io/repos/jorol/Catmandu-Importer-HTMLTable/badge.png?branch=master)](https://coveralls.io/r/jorol/Catmandu-Importer-HTMLTable?branch=master)
+[![Kwalitee Score](http://cpants.cpanauthors.org/dist/Catmandu-Importer-HTMLTable.png)](http://cpants.cpanauthors.org/dist/Catmandu-Importer-HTMLTable)
+[![CPAN version](https://badge.fury.io/pl/Catmandu-Importer-HTMLTable.png)](http://badge.fury.io/pl/Catmandu-Importer-HTMLTable)
 
 # SYNOPSIS
 
-    $ catmandu convert HTMLTables --location ./t/tables.html
+    # On the command line
+    $ catmandu convert HTMLTables --location ./t/tables.html to CSV
     # extract second table from HTML document
-    $ catmandu convert HTMLTables --location ./t/tables.html --nr 2
+    $ catmandu convert HTMLTables --location ./t/tables.html --nr 2 to CSV
     # extract links from table cells
-    $ catmandu convert HTMLTables --location ./t/tables.html --href 1
+    $ catmandu convert HTMLTables --location ./t/tables.html --href 1 to YAML
 
     # Or in Perl
     use Catmandu::Importer::HTMLTable;
@@ -55,3 +61,5 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 # SEE ALSO
+
+[Catmandu](https://metacpan.org/pod/Catmandu), [Catmandu::Importer](https://metacpan.org/pod/Catmandu::Importer).
