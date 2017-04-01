@@ -113,11 +113,11 @@ Catmandu::Importer::HTMLTable - Imports HTML tables form file or URL
 =head1 SYNOPSIS
 
     # On the command line
-    $ catmandu convert HTMLTables --location ./t/tables.html to CSV
+    $ catmandu convert HTMLTable --location ./t/tables.html to CSV
     # extract second table from HTML document
-    $ catmandu convert HTMLTables --location ./t/tables.html --nr 2 to CSV
+    $ catmandu convert HTMLTable --location ./t/tables.html --nr 2 to CSV
     # extract links from table cells
-    $ catmandu convert HTMLTables --location ./t/tables.html --href 1 to YAML
+    $ catmandu convert HTMLTable --location ./t/tables.html --href 1 to YAML
 
     # Or in Perl
     use Catmandu::Importer::HTMLTable;
