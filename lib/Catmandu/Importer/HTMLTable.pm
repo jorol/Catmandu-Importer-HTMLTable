@@ -99,7 +99,16 @@ __END__
 
 =head1 NAME
 
-Catmandu::Importer::HTMLTable - Imports HTML tables form file or URL 
+Catmandu::Importer::HTMLTable - Imports HTML tables form file or URL
+
+=begin markdown
+
+[![Build Status](https://travis-ci.org/jorol/Catmandu-Importer-HTMLTable.png)](https://travis-ci.org/jorol/Catmandu-Importer-HTMLTable)
+[![Coverage Status](https://coveralls.io/repos/jorol/Catmandu-Importer-HTMLTable/badge.png?branch=master)](https://coveralls.io/r/jorol/Catmandu-Importer-HTMLTable?branch=master)
+[![Kwalitee Score](http://cpants.cpanauthors.org/dist/Catmandu-Importer-HTMLTable.png)](http://cpants.cpanauthors.org/dist/Catmandu-Importer-HTMLTable)
+[![CPAN version](https://badge.fury.io/pl/Catmandu-Importer-HTMLTable.png)](http://badge.fury.io/pl/Catmandu-Importer-HTMLTable)
+
+=end markdown
 
 =head1 SYNOPSIS
 
