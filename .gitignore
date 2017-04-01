@@ -1,0 +1,7 @@
+/Catmandu-Importer-HTMLTable-*
+/.build
+/_build*
+/Build
+MYMETA.*
+!META.json
+/.prove
