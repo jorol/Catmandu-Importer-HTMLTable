@@ -31,7 +31,7 @@ note('Get second table');
     is_deeply(
         $rows->[1],
         { D => '2D', E => '2E', F => '2F' },
-        'table header via <th>'
+        'table header via first <tr>'
     );
 }
 
@@ -42,14 +42,13 @@ note('Get href');
         href     => 1
     );
     my $rows = $importer->to_array();
-    is( scalar @{$rows}, 2, 'got table rows' );
     is_deeply(
         $rows->[1],
         {   A => { text => '2A' },
             B => { text => '2B' },
             C => { text => '2C', href => '/link/to/2C' }
         },
-        'table header via first <tr>'
+        'get links'
     );
 }
 
