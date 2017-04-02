@@ -30,7 +30,7 @@ note('Get second table');
     is( scalar @{$rows}, 2, 'got table rows' );
     is_deeply(
         $rows->[1],
-        { A => '2D', B => '2E', C => '2F' },
+        { D => '2D', E => '2E', F => '2F' },
         'table header via <th>'
     );
 }

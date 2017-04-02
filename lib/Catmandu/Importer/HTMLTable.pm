@@ -6,7 +6,7 @@ our $VERSION = '0.01';
 
 use namespace::clean;
 use Catmandu::Sane;
-use Catmandu::Util qw(trim);
+use Catmandu::Util qw(is_hash_ref);
 use XML::LibXML;
 use Moo;
 
@@ -27,14 +27,16 @@ sub _build_table {
 
     my @table = $self->get_table($dom);
     my @tr    = $self->get_tr( $table[ $self->nr - 1 ] );
-    my @th    = $self->get_th($dom);
+    my @th    = $self->get_th( $table[ $self->nr - 1 ] );
 
     if (@th) {
         shift @tr;
     }
     else {
-        @th = map { $_->{text} } get_td( shift @tr );
+        @th = map { is_hash_ref $_ ? $_->{text} : $_ }
+            $self->get_td( shift @tr );
     }
+
     my @table_rows;
     for my $tr (@tr) {
         my @td = $self->get_td($tr);
